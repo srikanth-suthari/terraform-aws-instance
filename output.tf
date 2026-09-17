@@ -10,6 +10,10 @@ output "ec2_instance_type" {
     value = aws_instance.this.instance_type
 }
 
-output "ec2_instance_id" {
-    value = aws_instance.this.instance_id
+output "instance_arn" {
+    value = aws_instance.this.arn
+}
+
+output "instance_id" {
+    value = aws_instance.this.id
 }
